@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.huizhiframework.security.permissions.dao.user.UserInfoDOMapper" >
+  <resultMap id="BaseResultMap" type="com.huizhiframework.security.permissions.model.user.UserInfoDO" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="userid" property="userid" jdbcType="BIGINT" />
+    <result column="jobnumber" property="jobnumber" jdbcType="VARCHAR" />
+    <result column="hired_date" property="hiredDate" jdbcType="TIMESTAMP" />
+    <result column="is_admin" property="isAdmin" jdbcType="BIT" />
+    <result column="unionid" property="unionid" jdbcType="VARCHAR" />
+    <result column="biz_userid" property="bizUserid" jdbcType="VARCHAR" />
+    <result column="tel" property="tel" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="CHAR" />
+    <result column="org_email" property="orgEmail" jdbcType="VARCHAR" />
+    <result column="is_boss" property="isBoss" jdbcType="BIT" />
+    <result column="is_hide" property="isHide" jdbcType="BIT" />
+    <result column="position" property="position" jdbcType="VARCHAR" />
+    <result column="isSenior" property="issenior" jdbcType="BIT" />
+    <result column="extattr" property="extattr" jdbcType="VARCHAR" />
+    <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP" />
+    <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+    <result column="work_place" property="workPlace" jdbcType="LONGVARCHAR" />
+    <result column="remark" property="remark" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hz-integral-api" />
+        <module name="hz-integral-common" />
+        <module name="hz-integral-core" />
+        <module name="hz-integral-web" />
+        <module name="hz-permissions" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hz-integral" target="1.8" />
+      <module name="hz-integral-api" target="1.8" />
+      <module name="hz-integral-common" target="1.8" />
+      <module name="hz-integral-core" target="1.8" />
+      <module name="hz-integral-data" target="1.8" />
+      <module name="hz-integral-web" target="1.8" />
+      <module name="hz-permissions" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

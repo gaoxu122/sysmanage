@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hz-integral.iml" filepath="$PROJECT_DIR$/hz-integral.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hz-integral-api/hz-integral-api.iml" filepath="$PROJECT_DIR$/hz-integral-api/hz-integral-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hz-integral-common/hz-integral-common.iml" filepath="$PROJECT_DIR$/hz-integral-common/hz-integral-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hz-integral-core/hz-integral-core.iml" filepath="$PROJECT_DIR$/hz-integral-core/hz-integral-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hz-integral-web/hz-integral-web.iml" filepath="$PROJECT_DIR$/hz-integral-web/hz-integral-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hz-permissions/hz-permissions.iml" filepath="$PROJECT_DIR$/hz-permissions/hz-permissions.iml" />
+    </modules>
+  </component>
+</project>
