@@ -5,379 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a868187d-d928-4124-ae9b-141f3b2d7e03" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/framework/security/integral/core/service/sys/UserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/biz/LoginBiz.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/biz/log/ExceptionLogBiz.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/biz/log/LoginLogBiz.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/biz/sys/DepartmentBiz.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/biz/sys/MenuBiz.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/biz/sys/RoleBiz.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/biz/sys/UserBiz.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/controller/LoginController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/controller/sys/DepartmentController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/controller/sys/MenuController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/controller/sys/RoleController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/controller/sys/UserController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/exception/MenuException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/my/UserEntity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/vo/DepartmentVO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/vo/MenuVO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/vo/UserLoginVO.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/huizhiframework/security/integral/api/code/ServiceResultCode.java" afterPath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/framework/security/integral/api/code/ServiceResultCode.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/huizhiframework/security/integral/api/constant/Constants.java" afterPath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/framework/security/integral/api/constant/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/huizhiframework/security/integral/api/enums/EnumStatus.java" afterPath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/framework/security/integral/api/enums/EnumStatus.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/huizhiframework/security/integral/api/enums/StatusType.java" afterPath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/framework/security/integral/api/enums/StatusType.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/huizhiframework/security/integral/api/exception/UserInvalidException.java" afterPath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/framework/security/integral/api/exception/UserInvalidException.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/huizhiframework/security/integral/api/model/corp/CorpVo.java" afterPath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/framework/security/integral/api/model/corp/CorpVo.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/huizhiframework/security/integral/api/model/ding/CorpTokenVO.java" afterPath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/framework/security/integral/api/model/ding/CorpTokenVO.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/huizhiframework/security/integral/api/model/user/UserLoginVo.java" afterPath="$PROJECT_DIR$/hz-integral-api/src/main/java/com/framework/security/integral/api/model/user/UserLoginVo.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/biz/BaseBiz.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/biz/BaseBiz.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/constant/CommonConstants.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/constant/CommonConstants.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/constant/ResultCode.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/constant/ResultCode.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/context/BaseContextHandler.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/context/BaseContextHandler.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/controller/BaseController.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/controller/BaseController.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/exception/BaseException.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/exception/BaseException.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/exception/ResponseResultException.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/exception/ResponseResultException.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/handler/GlobalExceptionHandler.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/handler/GlobalExceptionHandler.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/log/context/RpcContext.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/log/context/RpcContext.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/log/format/LogFormatter.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/log/format/LogFormatter.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/log/http/HttpRequestContext.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/log/http/HttpRequestContext.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/log/http/HttpRequestContextHolder.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/log/http/HttpRequestContextHolder.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/log/http/HttpRequestInteceptor.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/log/http/HttpRequestInteceptor.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/log/service/IgnoreProfile.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/log/service/IgnoreProfile.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/log/service/IgnoreResultProfile.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/log/service/IgnoreResultProfile.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/log/service/ServiceInvokerInterceptor.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/log/service/ServiceInvokerInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/log/service/ServiceMethodInterceptor.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/log/service/ServiceMethodInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/msg/BaseResponse.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/msg/BaseResponse.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/msg/ObjectRestResponse.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/msg/ObjectRestResponse.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/msg/ServiceResult.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/msg/ServiceResult.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/service/BaseService.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/service/BaseService.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/service/impl/BaseServiceImpl.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/service/impl/BaseServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/util/ClientUtil.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/util/ClientUtil.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/util/EntityUtils.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/util/EntityUtils.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/util/Query.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/util/Query.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/util/ReflectionUtils.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/util/ReflectionUtils.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/util/StringHelper.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/util/StringHelper.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/util/TreeUtil.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/util/TreeUtil.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/util/UUIDUtils.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/util/UUIDUtils.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/vo/TableData.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/vo/TableData.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/vo/TreeNode.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/vo/TreeNode.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/huizhiframework/security/integral/common/web/ParameterRequestWrapper.java" afterPath="$PROJECT_DIR$/hz-integral-common/src/main/java/com/framework/security/integral/common/web/ParameterRequestWrapper.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/pom.xml" afterPath="$PROJECT_DIR$/hz-integral-core/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/bo/corp/CorpBO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/bo/corp/CorpInfoBO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/bo/corp/CorpUserBO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/bo/corp/DepartmentBO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/bo/corp/DepartmentTreeBO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/bo/event/EventCategoryBO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/bo/user/UserDetailBO.java" afterPath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/framework/security/integral/core/bo/sys/UserDetailBO.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/corp/AppCorpDeptUserMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/corp/AppUserAuthMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/corp/AppUserInfoMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/corp/AppUserMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/corp/CorpInfoMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/corp/CorpMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/corp/CorpSourceMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/corp/DepartmentDetailMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/corp/DepartmentMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/ding/CorpAppMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/ding/CorpSsoMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/ding/CorpTicketMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/ding/CorpTokenMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/ding/SsoTokenMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/event/EventCategoryMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/event/EventMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/event/LabelMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/log/DeconnexionLogMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/log/ExceptionLogMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/log/RequestLogMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/dao/user/UserMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/corp/AppCorpDeptUserDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/corp/AppUserAuthDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/corp/AppUserDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/corp/AppUserInfoDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/corp/CorpDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/corp/CorpInfo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/corp/CorpSourceDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/corp/DepartmentDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/corp/DepartmentDetailDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/ding/CorpAppDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/ding/CorpSsoDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/ding/CorpTicketDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/ding/CorpTokenDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/ding/SsoTokenDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/event/EventCategoryDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/event/EventDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/event/LabelDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/log/DeconnexionLog.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/log/ExceptionLogDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/model/log/RequestLogDO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/corp/AppCorpDeptUserService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/corp/AppUserAuthService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/corp/AppUserInfoService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/corp/AppUserService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/corp/CorpService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/corp/DepartmentDetailService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/corp/DepartmentService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/ding/CorpAppService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/ding/CorpSsoService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/ding/CorpTicketService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/ding/CorpTokenService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/ding/SsoTokenService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/log/ExceptionLogService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/log/SituationLog.java" afterPath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/framework/security/integral/core/service/log/SituationLog.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/service/user/UserService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/util/ServiceResult.java" afterPath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/framework/security/integral/core/util/ServiceResult.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/vo/CorpAppVO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/vo/CorpBaseVO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/vo/CorpDetailVO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/vo/EventVO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/java/com/huizhiframework/security/integral/core/vo/LabelVO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/builder/generatorConfig.xml" afterPath="$PROJECT_DIR$/hz-integral-core/src/main/resources/builder/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/ding_cloud_push.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/corp/CorpInfoMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/corp/CorpMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/corp/CorpSourceMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/corp/DepartmentDetailMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/corp/DepartmentMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/ding/CorpAppMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/ding/CorpSsoMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/ding/CorpTicketMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/ding/CorpTokenMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/ding/SsoTokenMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/event/EventCategoryMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/event/EventMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/event/LabelMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/log/DeconnexionLogMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/log/ExceptionLogMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/log/RequestLogMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-core/src/main/resources/mapper/user/UserMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/lib/lippi-oapi-encrpt.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/lib/taobao-sdk-java-auto_1479188381469-20190325.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/model/DingDeptDetail.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/model/SimpleDeptList.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/model/SimpleUserList.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/model/UserList.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/model/UserListDetail.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/sdk/CorpHttpSdk.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/sdk/DeptHttpSdk.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/sdk/EventHttpSdk.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/sdk/UserHttpSdk.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/CorpHttpSdkService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/CorpSsoHttpSdkService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/DeptHttpSdkService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/EventHttpSdkService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/UserHttpSdkService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/impl/CorpHttpSdkServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/impl/CorpSsoSdkServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/impl/DeptHttpSdkServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/impl/HttpSdkServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/service/impl/UserHttpSdkServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-data/src/main/java/com/huizhiframework/security/integral/data/util/HttpRequestHelper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/pom.xml" afterPath="$PROJECT_DIR$/hz-integral-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/Application.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/Application.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/SchedulerTask/IntegralSchedulerTask.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/SchedulerTask/IntegralSchedulerTask.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/annotation/IgnoreUserToken.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/annotation/IgnoreUserToken.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/LoginBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/basic/corp/CorpBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/basic/corp/DepartmentBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/business/sys/EventBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/business/sys/EventCategoryBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/business/sys/LabelBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/dingding/DingDeptBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/dingding/DingUserBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/isv/TT" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/isv/ding/CorpTicketBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/isv/ding/CorpTokenBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/isv/ding/RegisterCallBackBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/isv/ding/SignBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/isv/ding/SsoTokenBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/log/DeconnexionLogBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/log/ExceptionLogBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/log/RequestLogBiz.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/biz/log/RequestLogBiz.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/ops/AppManageBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/ops/EnterpriseBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/biz/ops/EnterpriseInfoBiz.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/configuration/ConfigJDBC.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/ConfigJDBC.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/configuration/CorsConfig.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/CorsConfig.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/configuration/DruidConfiguration.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/DruidConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/configuration/KeyConfiguration.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/KeyConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/configuration/UserAuthConfig.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/UserAuthConfig.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/configuration/UserAuthUtil.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/UserAuthUtil.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/configuration/WebConfiguration.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/WebConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/constant/ReturnCode.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/constant/ReturnCode.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/IndexController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/LoginController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/business/sys/EventCategoryController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/business/sys/EventController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/business/sys/LabelController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/dingding/DingCorpController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/dingding/DingDeptController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/dingding/DingUserController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/isv/ding/RegisterCallBackController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/isv/ding/SignController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/ops/AppManageController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/ops/EnterpriseController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/controller/ops/EnterpriseInfoController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/exception/CorpAppException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/exception/CorpAuthException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/exception/EventCategoryException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/exception/EventException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/exception/JwtSignatureException.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/exception/JwtSignatureException.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/exception/LabelException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/exception/UserAuthException.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/exception/UserAuthException.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/exception/UserInvalidException.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/exception/UserInvalidException.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/exception/UserTokenException.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/exception/UserTokenException.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/intercepter/ControllerLogAop.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/intercepter/ControllerLogAop.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/intercepter/UserAuthRestInterceptor.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/intercepter/UserAuthRestInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/runner/KeyConfigurationRunner.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/runner/KeyConfigurationRunner.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/excelUtils/exception/ExcelException.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/excelUtils/ExcelException.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/excelUtils/utils/CellFontFormat.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/excelUtils/CellFontFormat.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/excelUtils/utils/CellStyleFormat.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/excelUtils/CellStyleFormat.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/excelUtils/utils/ExcelListener.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/excelUtils/ExcelListener.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/excelUtils/utils/ExcelUtil.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/excelUtils/ExcelUtil.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/excelUtils/utils/ExcelWriterFactory.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/excelUtils/ExcelWriterFactory.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/excelUtils/utils/MyBeanCopy.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/excelUtils/MyBeanCopy.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/excelUtils/utils/MyStringUtils.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/excelUtils/MyStringUtils.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/excelUtils/utils/WriterHandler07.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/excelUtils/WriterHandler07.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/jwt/JwtHelper.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/jwt/JwtHelper.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/jwt/RsaKeyHelper.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/jwt/RsaKeyHelper.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/huizhiframework/security/integral/web/util/staticvalue/StaticParam.java" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/util/staticvalue/StaticParam.java" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/hz-integral-web/src/main/resources/application-dev.yml" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/css/demo-ie8.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/css/demo.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/css/jquery.fileupload-noscript.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/css/jquery.fileupload-ui-noscript.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/css/jquery.fileupload-ui.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/css/jquery.fileupload.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/jquery.fileupload.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/jquery.iframe-transport.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/jqueryFileUpload-9.10.0/vendor/jquery.ui.widget.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/js/jquery-3.3.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/layui.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/layui.mobile.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/modules/code.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/modules/laydate/default/laydate.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/modules/layer/default/icon-ext.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/modules/layer/default/icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/modules/layer/default/layer.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/modules/layer/default/loading-0.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/modules/layer/default/loading-1.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/css/modules/layer/default/loading-2.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/font/iconfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/font/iconfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/font/iconfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/font/iconfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/0.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/1.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/10.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/11.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/12.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/13.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/14.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/15.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/16.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/17.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/18.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/19.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/2.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/20.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/21.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/22.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/23.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/24.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/25.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/26.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/27.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/28.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/29.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/3.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/30.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/31.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/32.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/33.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/34.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/35.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/36.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/37.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/38.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/39.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/4.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/40.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/41.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/42.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/43.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/44.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/45.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/46.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/47.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/48.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/49.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/5.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/50.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/51.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/52.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/53.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/54.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/55.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/56.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/57.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/58.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/59.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/6.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/60.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/61.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/62.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/63.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/64.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/65.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/66.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/67.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/68.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/69.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/7.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/70.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/71.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/8.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/images/face/9.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/carousel.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/code.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/colorpicker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/element.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/flow.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/form.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/laydate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/layedit.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/layer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/laypage.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/laytpl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/mobile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/rate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/slider.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/table.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/tree.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/upload.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/lay/modules/util.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layer/extend/layer.ext.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layer/layer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layer/skin/default/icon-ext.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layer/skin/default/icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layer/skin/default/loading-0.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layer/skin/default/loading-1.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layer/skin/default/loading-2.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layer/skin/layer.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layer/skin/layer.ext.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layui.all.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/assets/layui/layui.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/ftl/base/baseJs.ftl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/ftl/base/baseStyle.ftl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/ftl/index.ftl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-integral-web/src/main/resources/logback.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hz-permissions/src/main/java/com/huizhiframework/security/permissions/controller/TestController.java" afterPath="$PROJECT_DIR$/hz-permissions/src/main/java/com/huizhiframework/security/permissions/controller/TestController.java" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/hz-integral-web/target/" />
     <ignored path="$PROJECT_DIR$/hz-integral-data/target/" />
@@ -412,8 +41,8 @@
       <file leaf-file-name="DepartmentController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/controller/sys/DepartmentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="447">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -465,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hz-integral-core/src/main/java/com/framework/security/integral/core/model/user/User.java" />
         <option value="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/intercepter/UserAuthRestInterceptor.java" />
         <option value="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/vo/UserLoginVO.java" />
         <option value="$PROJECT_DIR$/hz-integral-core/src/main/java/com/framework/security/integral/core/dao/menu/MenuMapper.java" />
@@ -516,6 +144,7 @@
         <option value="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/constant/ReturnCode.java" />
         <option value="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/biz/sys/DepartmentBiz.java" />
         <option value="$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/controller/sys/DepartmentController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -913,12 +542,12 @@
       <workItem from="1569310484561" duration="4566000" />
       <workItem from="1569748228329" duration="2551000" />
       <workItem from="1570504388873" duration="12461000" />
-      <workItem from="1570584997198" duration="12301000" />
+      <workItem from="1570584997198" duration="12682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="624194000" />
+    <option name="totallyTimeSpent" value="624575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -944,8 +573,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5581015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56301147" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.56301147" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1015,7 +644,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/annotation/IgnoreUserToken.java" />
     <entry file="file://$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/configuration/ConfigJDBC.java" />
     <entry file="file://$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/biz/LoginBiz.java" />
     <entry file="file://$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/configuration/my/UserEntity.java" />
@@ -1356,7 +984,7 @@
         <state relative-caret-position="732">
           <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1366,15 +994,26 @@
         <state relative-caret-position="-9">
           <caret line="45" column="155" lean-forward="false" selection-start-line="45" selection-start-column="155" selection-end-line="45" selection-end-column="155" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hz-integral-web/src/main/java/com/framework/security/integral/web/controller/sys/DepartmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="447">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
