@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.framework.security.integral.core.dao.sys.DepartmentMapper" >
-  <resultMap id="BaseResultMap" type="com.framework.security.integral.core.model.sys.Department" >
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <result column="id" property="id" jdbcType="INTEGER" />
-    <result column="name" property="name" jdbcType="VARCHAR" />
-    <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP" />
-    <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
-    <result column="creator_ip" property="creatorIp" jdbcType="VARCHAR" />
-    <result column="parent_id" property="parentId" jdbcType="INTEGER" />
-    <result column="path" property="path" jdbcType="VARCHAR" />
-    <result column="is_delete" property="isDelete" jdbcType="BIT" />
-    <result column="is_enable" property="isEnable" jdbcType="BIT" />
-  </resultMap>
+<mapper namespace="com.framework.security.integral.core.dao.sys.DepartmentMapper">
+    <resultMap id="BaseResultMap" type="com.framework.security.integral.core.model.sys.Department">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP"/>
+        <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP"/>
+        <result column="creator_ip" property="creatorIp" jdbcType="VARCHAR"/>
+        <result column="parent_id" property="parentId" jdbcType="INTEGER"/>
+        <result column="path" property="path" jdbcType="VARCHAR"/>
+        <result column="is_delete" property="isDelete" jdbcType="BIT"/>
+        <result column="is_enable" property="isEnable" jdbcType="BIT"/>
+        <result column="sort" property="sort" jdbcType="INTEGER"/>
+    </resultMap>
+    <delete id="deleteBatchDept">
+        delete from department where
+        <foreach collection="">
+
+        </foreach>
+    </delete>
+
+    <delete id="deleteDeptByPath">
+         delete from department where
+    </delete>
 </mapper>

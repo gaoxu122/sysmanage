@@ -6,6 +6,8 @@ package com.framework.security.integral.web.constant;
  */
 public enum ReturnCode {
 
+    /** 生成树形失败**/
+    CREATE_TREE_FAIL(800,"生成树形失败"),
 
     /***系统设置返回码及其msg ：1000  -  1200***/
     /***       用户            ***/
@@ -23,6 +25,14 @@ public enum ReturnCode {
     SUPERIOR_DEPARTMENT_NOT_SELECTED(1021,"未选择上级部门"),
 
     /***       权限            ***/
+
+
+
+    /**       邮件功能         **/
+    MAIL_ITEM_IS_EMPTY(1070,"邮件主题不能为空"),
+    MAIL_RESPONSE_IS_EMPTY(1071,"邮件接收人不能为空"),
+    MAIL_CONTENT_IS_EMPTY(1072,"邮件内容不能为空"),
+
 
 
     PARAMETER_INCOMING_ERROR(10001, "传入参数错误"),

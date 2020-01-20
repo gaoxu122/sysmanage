@@ -6,13 +6,13 @@ import com.framework.security.integral.core.model.sys.User;
 import com.framework.security.integral.core.service.sys.UserService;
 import com.framework.security.integral.web.constant.ReturnCode;
 import com.framework.security.integral.web.my.UserEntity;
+import com.framework.security.integral.web.util.MiteBeanUtils;
 import com.framework.security.integral.web.vo.UserLoginVO;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 
 
 /**
@@ -31,8 +31,11 @@ public class LoginBiz {
     @Autowired
     private UserMapper userMapper;
 
+    @Autowired
+    private JwtService jwtService;
 
-    /**w
+
+    /**
      * 用户登录
      *
      * @param user
@@ -43,19 +46,18 @@ public class LoginBiz {
         if (StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassword())) {
             return ObjectRestResponse.failure(ReturnCode.PARAMETER_INCOMING_ERROR.getCode(), ReturnCode.PARAMETER_INCOMING_ERROR.getMsg());
         }
-        //  根据用户名检查用户是否已经存在
-        Integer status = userService.checkUserName(user.getUserName());
-
-        if (1 == status) {
-            return ObjectRestResponse.failure(ReturnCode.USER_ALREADY_EXISTS.getCode(), ReturnCode.USER_ALREADY_EXISTS.getMsg());
+        //判断用户名是否存在
+        Boolean aBoolean = userService.checkUserName(user.getUserName(), user.getPassword());
+        log.debug("用户验证信息： {}", aBoolean.toString());
+        if (!aBoolean) {
+            return ObjectRestResponse.failure(ReturnCode.PASSWORD_CANNOT_BE_EMPTY.getCode(), ReturnCode.PASSWORD_CANNOT_BE_EMPTY.getMsg());
         }
 
-        // 用户第一次需要给用户提示先注册
-        if (0 == status) {
-            return ObjectRestResponse.failure(ReturnCode.NAME_CANNOT_BE_EMPTY.getCode(), ReturnCode.NAME_CANNOT_BE_EMPTY.getMsg());
-        }
+        // 用户登录的时候也生成token
+        String token = jwtService.generateToken(user);
+        log.info("token:{}", token);
 
-        return ObjectRestResponse.success();
+        return ObjectRestResponse.success(token);
     }
 
     /**
@@ -76,6 +78,7 @@ public class LoginBiz {
 
         try {
             // 对用户赋值 并插入数据库
+//            User insertUser = MiteBeanUtils.doToDto(user, User.class);
             User insertUser = UserEntity.setUser(user);
             userMapper.insertSelective(insertUser);
 

@@ -4,7 +4,6 @@ import com.framework.security.integral.common.vo.TreeNode;
 import lombok.Data;
 
 import javax.persistence.Column;
-import javax.persistence.Id;
 import java.util.Date;
 
 /**
@@ -19,6 +18,7 @@ public class DepartmentVO extends TreeNode {
      * 级联选择的值
      */
     private String label;
+    private String value;
 
     /**
      * 部门名称

@@ -1,7 +1,9 @@
 package com.framework.security.integral.web.util.jwt;
 
+import lombok.extern.slf4j.Slf4j;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
+import sun.rmi.runtime.Log;
 
 import java.io.DataInputStream;
 import java.io.FileOutputStream;
@@ -20,13 +22,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
-*RsaKeyHelper
+ * RsaKeyHelper
  *
-*@description
- *
-*@author jianghx
-*@create 2018/8/29 10:13
-**/
+ * @author jianghx
+ * @description
+ * @create 2018/8/29 10:13
+ **/
+
+@Slf4j
 public class RsaKeyHelper {
     /**
      * 获取公钥
@@ -54,6 +57,7 @@ public class RsaKeyHelper {
      * @throws Exception
      */
     public PrivateKey getPrivateKey(String filename) throws Exception {
+        log.info("filename:{}", filename);
         InputStream resourceAsStream = this.getClass().getClassLoader().getResourceAsStream(filename);
         DataInputStream dis = new DataInputStream(resourceAsStream);
         byte[] keyBytes = new byte[resourceAsStream.available()];

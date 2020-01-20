@@ -3,15 +3,15 @@ package com.framework.security.integral.common.msg;
 import com.framework.security.integral.common.constant.ResultCode;
 
 /**
-*BaseResponse
+ * BaseResponse
+ * <p>
+ * 公共响应类
  *
-*公共响应类
- *
-*@author jianghx
-*@create 2018/8/21 15:31
-**/
+ * @author jianghx
+ * @create 2018/8/21 15:31
+ **/
 public class BaseResponse {
-    private int status = ResultCode.SUCCESS.getCode();
+    private int status;
     private String message;
 
     public BaseResponse(int status, String message) {
@@ -21,7 +21,7 @@ public class BaseResponse {
 
     public BaseResponse() {
         this.status = ResultCode.SUCCESS.getCode();
-        this.message =  ResultCode.SUCCESS.getMsg();
+        this.message = ResultCode.SUCCESS.getMsg();
 
     }
 

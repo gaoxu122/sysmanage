@@ -16,13 +16,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
-*BaseBiz
+ * BaseBiz
+ * <p>
+ * 公共基础biz基类
  *
-*公共基础biz基类
- *
-*@author jianghx
-*@create 2018/8/22 9:42
-**/
+ * @author jianghx
+ * @create 2018/8/22 9:42
+ **/
 public abstract class BaseBiz<M extends Mapper<T>, T> {
     @Autowired
     protected M mapper;
@@ -56,14 +56,14 @@ public abstract class BaseBiz<M extends Mapper<T>, T> {
     }
 
 
-    public void insert(T entity){
-       // EntityUtils.setCreatAndUpdatInfo(entity);
+    public void insert(T entity) {
+       
         mapper.insert(entity);
     }
 
 
     public void insertSelective(T entity) {
-      //  EntityUtils.setCreatAndUpdatInfo(entity);
+
         mapper.insertSelective(entity);
     }
 
@@ -78,14 +78,14 @@ public abstract class BaseBiz<M extends Mapper<T>, T> {
     }
 
 
-    public void updateById(T entity)  {
-       // EntityUtils.setUpdatedInfo(entity);
+    public void updateById(T entity) {
+
         mapper.updateByPrimaryKey(entity);
     }
 
 
     public void updateSelectiveById(T entity) {
-       // EntityUtils.setUpdatedInfo(entity);
+
         mapper.updateByPrimaryKeySelective(entity);
 
     }
@@ -101,11 +101,11 @@ public abstract class BaseBiz<M extends Mapper<T>, T> {
     public ObjectRestResponse selectByQuery(Query query) {
         Class<T> clazz = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[1];
         Example example = new Example(clazz);
-        if(query.entrySet().size()>0) {
+        if (query.entrySet().size() > 0) {
             Example.Criteria criteria = example.createCriteria();
             for (Map.Entry<String, Object> entry : query.entrySet()) {
 
-                if(StringUtils.isNotBlank( entry.getValue().toString())){
+                if (StringUtils.isNotBlank(entry.getValue().toString())) {
                     criteria.andLike(entry.getKey(), "%" + entry.getValue().toString() + "%");
                 }
 
@@ -113,7 +113,7 @@ public abstract class BaseBiz<M extends Mapper<T>, T> {
         }
         Page<Object> result = PageHelper.startPage(query.getPage(), query.getLimit());
         List<T> list = mapper.selectByExample(example);
-        return ObjectRestResponse.genTableResult(result.getTotal(),list);
+        return ObjectRestResponse.genTableResult(result.getTotal(), list);
     }
 
 }

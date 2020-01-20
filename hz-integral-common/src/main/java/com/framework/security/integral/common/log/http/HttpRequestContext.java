@@ -3,7 +3,9 @@ package com.framework.security.integral.common.log.http;
 import lombok.Data;
 
 /**
- * Created by mint on 16-1-27.
+ *
+ * @author mint
+ * @date 16-1-27
  */
 @Data
 public class HttpRequestContext {

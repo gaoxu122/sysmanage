@@ -16,6 +16,9 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author gaoxu
+ */
 public class ServiceMethodInterceptor implements MethodInterceptor, InitializingBean {
     private static final Logger methodProfileLog = LoggerFactory.getLogger(ServiceMethodInterceptor.class);
 
@@ -33,6 +36,7 @@ public class ServiceMethodInterceptor implements MethodInterceptor, Initializing
     }
     //用于解决嵌套profile拦截器收集日志打印,最终打成一条日志
     private static ThreadLocal<Boolean> profileStarter = new ThreadLocal<Boolean>() {
+        @Override
         protected Boolean initialValue() {
             return Boolean.FALSE;
         }
@@ -68,7 +72,7 @@ public class ServiceMethodInterceptor implements MethodInterceptor, Initializing
         String appName = null;
         String appIp = null;
 
-        long endTime = 0l;//运行结束时间戳
+        long endTime = 0L;//运行结束时间戳
         Integer success = Integer.valueOf(1);//方法运行正常标识
         try {
             result = methodInvocation.proceed();

@@ -18,13 +18,22 @@ import java.util.Map;
 @RequestMapping(value = "user")
 public class UserController extends BaseController<UserBiz, UserMapper> {
 
-
+    /**
+     * 查询用户
+     *
+     * @param paream
+     * @return
+     */
     @GetMapping(value = "/select_user")
     public ObjectRestResponse selectUser(@RequestParam Map<String, Object> paream) {
         Query query = new Query(paream);
         return baseBiz.selectUser(query);
     }
 
+    /**
+     * @param user
+     * @return
+     */
     @PutMapping(value = "update_user")
     public ObjectRestResponse updateUser(@RequestBody User user) {
 

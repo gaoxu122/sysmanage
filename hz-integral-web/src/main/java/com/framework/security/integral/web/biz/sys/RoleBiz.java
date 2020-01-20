@@ -1,8 +1,12 @@
 package com.framework.security.integral.web.biz.sys;
 
 import com.framework.security.integral.common.biz.BaseBiz;
+import com.framework.security.integral.common.exception.BaseException;
 import com.framework.security.integral.common.msg.ObjectRestResponse;
+import com.framework.security.integral.core.dao.sys.RoleMapper;
+import com.framework.security.integral.core.model.sys.Role;
 import com.framework.security.integral.web.constant.ReturnCode;
+import com.sun.xml.internal.rngom.parse.host.Base;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -48,13 +52,13 @@ public class RoleBiz extends BaseBiz<RoleMapper, Role> {
         role.setGmtModified(new Date());
         role.setIsEnable(false);
         role.setIsDelete(false);
+
         try {
-
-            this.insert(role);
+            this.mapper.insert(role);
         } catch (Exception e) {
-
-            e.printStackTrace();
+            throw new BaseException(ReturnCode.INSERT_FAILED.getMsg(), ReturnCode.INSERT_FAILED.getCode());
         }
+
 
         return ObjectRestResponse.genJsonResultByOk();
     }
@@ -74,6 +78,14 @@ public class RoleBiz extends BaseBiz<RoleMapper, Role> {
 
         this.updateSelectiveById(role);
 
+        return ObjectRestResponse.success();
+    }
+
+    public ObjectRestResponse deleteRole(Integer roleId) {
+
+        Role role = this.mapper.selectByPrimaryKey(roleId);
+        role.setIsDelete(true);
+        this.mapper.updateByPrimaryKeySelective(role);
         return ObjectRestResponse.success();
     }
 

@@ -1,13 +1,12 @@
 package com.framework.security.integral.common.exception;
 
 /**
-*BaseException
+ * BaseException
  *
-*@description 基础异常类
- *
-*@author jianghx
-*@create 2018/8/20 10:01
-**/
+ * @author jianghx
+ * @description 基础异常类
+ * @create 2018/8/20 10:01
+ **/
 public class BaseException extends RuntimeException {
     private int status = 0;
 
@@ -22,7 +21,7 @@ public class BaseException extends RuntimeException {
     public BaseException() {
     }
 
-    public BaseException(String message,int status) {
+    public BaseException(String message, int status) {
         super(message);
         this.status = status;
     }

@@ -51,7 +51,6 @@ public class ControllerLogAop {
     private RequestLogBiz requestLogBiz;
 
 
-
     @Pointcut("execution(* com.framework.security.integral.*.controller..*(..))")
     public void pointCut() {
 
@@ -67,7 +66,7 @@ public class ControllerLogAop {
     public void before(JoinPoint joinPoint) throws Throwable {
 
         HttpRequestContext httpRequestContext = httpRequestContextHolder.getHttpRequestContext();
-        log.info(LogFormatter.getKVLogData(LogFormatter.LogEvent.START,
+        log.debug(LogFormatter.getKVLogData(LogFormatter.LogEvent.START,
                 LogFormatter.KeyValue.getNew("clientIp", httpRequestContext.getClientIp()),
                 LogFormatter.KeyValue.getNew("requestMethod", httpRequestContext.getRequestMethod()),
                 LogFormatter.KeyValue.getNew("requestURI", httpRequestContext.getRequestURI()),
@@ -84,7 +83,7 @@ public class ControllerLogAop {
     public void after(JoinPoint joinPoint) {
 
         HttpRequestContext httpRequestContext = httpRequestContextHolder.getHttpRequestContext();
-        log.info(LogFormatter.getKVLogData(LogFormatter.LogEvent.END,
+        log.debug(LogFormatter.getKVLogData(LogFormatter.LogEvent.END,
                 LogFormatter.KeyValue.getNew("clientIp", httpRequestContext.getClientIp()),
                 LogFormatter.KeyValue.getNew("requestMethod", httpRequestContext.getRequestMethod()),
                 LogFormatter.KeyValue.getNew("requestURI", httpRequestContext.getRequestURI()),

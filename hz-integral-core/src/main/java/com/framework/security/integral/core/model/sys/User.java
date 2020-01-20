@@ -3,6 +3,9 @@ package com.framework.security.integral.core.model.sys;
 import java.util.Date;
 import javax.persistence.*;
 
+/**
+ * @author gaoxu
+ */
 public class User {
     @Id
     private Integer id;
@@ -22,7 +25,7 @@ public class User {
 
     private String email;
 
-    private Integer tel;
+    private Long tel;
 
     /**
      * 是否删除（0为未删除 1为删除）
@@ -137,14 +140,14 @@ public class User {
     /**
      * @return tel
      */
-    public Integer getTel() {
+    public Long getTel() {
         return tel;
     }
 
     /**
      * @param tel
      */
-    public void setTel(Integer tel) {
+    public void setTel(Long tel) {
         this.tel = tel;
     }
 

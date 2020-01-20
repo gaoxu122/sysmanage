@@ -47,14 +47,12 @@ public class UserBiz extends BaseBiz<UserMapper, User> {
         Example.Criteria criteria = example.createCriteria();
         try {
             if (query.entrySet().size() > 0) {
-
                 for (Map.Entry<String, Object> entry : query.entrySet()) {
-
                     criteria.andLike(entry.getKey(), "%" + entry.getValue().toString() + "%");
                 }
             }
 
-            criteria.andEqualTo("isDelect", true);
+            criteria.andEqualTo("isDelect", false);
             result = PageHelper.startPage(query.getPage(), query.getLimit());
             users = this.selectByExample(example);
         } catch (Exception e) {
@@ -99,30 +97,31 @@ public class UserBiz extends BaseBiz<UserMapper, User> {
      */
     public ObjectRestResponse deleteUser(Integer id) {
 
-        User user = this.mapper.selectByPrimaryKey(id);
+        User user = mapper.selectByPrimaryKey(id);
         try {
             user.setGmtModified(new Date());
-            user.setIsDelect(false);
-            this.mapper.updateByPrimaryKeySelective(user);
+            user.setIsDelect(true);
+            mapper.updateByPrimaryKeySelective(user);
         } catch (Exception e) {
             e.printStackTrace();
         }
         return ObjectRestResponse.success();
     }
 
-
+    /**
+     * 批量删除用户
+     *
+     * @param ids
+     * @return
+     */
     public ObjectRestResponse batchDeleteUsers(String ids) {
 
+        log.info("删除的数据为：[{}]", ids);
         String[] strings = ids.split(",");
         Integer[] idsInt = (Integer[]) ConvertUtils.convert(strings, Integer.class);
         List<Integer> list = Arrays.asList(idsInt);
-        try {
-
-            Boolean aBoolean = userService.batchDeleteUser(list);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
+        Boolean aBoolean = userService.batchDeleteUser(list);
+        log.info("删除状态：[{}]", aBoolean.toString());
         return ObjectRestResponse.success();
     }
 }

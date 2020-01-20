@@ -1,3 +1,8 @@
 spring:
-    profiles:
-      active: dev
+  profiles:
+    active: dev
+  email:
+    # 企业邮箱 或者 个人邮箱
+    userName: "2499163874@qq.com"
+    # 邮箱的授权码
+    passWord: "phlvbtkbueuidjbh"

@@ -40,15 +40,32 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-           <!-- <exclusions>
-                <exclusion>
-                    <groupId>ch.qos.logback</groupId>
-                    <artifactId>logback-classic</artifactId>
-                </exclusion>
-            </exclusions>-->
+            <!-- <exclusions>
+                 <exclusion>
+                     <groupId>ch.qos.logback</groupId>
+                     <artifactId>logback-classic</artifactId>
+                 </exclusion>
+             </exclusions>-->
         </dependency>
 
+        <!--   邮件    -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.0.9</version>
+        </dependency>
+
+        <!--  视图解决关于那个乱码问题-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
 
         <!--引入aop依赖 start-->
         <dependency>
@@ -131,12 +148,21 @@
             <artifactId>hz-integral-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <!-- 测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
         <!--禁用缓存-->
         <!--<dependency>
             <groupId>com.github.wxiaoqi</groupId>
             <artifactId>ace-cache</artifactId>
             <version>0.0.2</version>
         </dependency>-->
+
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -235,10 +261,10 @@
                     <include>**/*.jar</include>
                 </includes>
             </resource>
-           <!-- <resource>
-                <directory>src/main/resources</directory>
-                <targetPath>BOOT-INF/classes/</targetPath>
-            </resource>-->
+            <!-- <resource>
+                 <directory>src/main/resources</directory>
+                 <targetPath>BOOT-INF/classes/</targetPath>
+             </resource>-->
             <resource>
                 <directory>src/main/java</directory>
                 <includes>

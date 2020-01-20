@@ -1,13 +1,11 @@
 package com.framework.security.integral.common.util;
 
 import com.framework.security.integral.common.constant.CommonConstants;
-import com.framework.security.integral.common.constant.CommonConstants;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

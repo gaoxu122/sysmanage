@@ -29,12 +29,14 @@
 
 
 
-        <!--<table tableName="Role" domainObjectName="Role"></table>-->
+<!--        <table tableName="Role" domainObjectName="Role"></table>-->
         <!--<table tableName="login_log" domainObjectName="LoginLog"></table>-->
         <!--<table tableName="exception_log" domainObjectName="ExceptionLog"></table>-->
         <!--<table tableName="request_log" domainObjectName="RequestLog"></table>-->
-        <!--<table tableName="menu" domainObjectName="Menu"></table>-->
-        <table tableName="Department" domainObjectName="Department"></table>
+        <table tableName="menu" domainObjectName="Menu"></table>
+        <!--<table tableName="Department" domainObjectName="Department"></table>-->
+<!--        <table tableName="mail" domainObjectName="Mail"></table>-->
+<!--        <table tableName="mail_detail" domainObjectName="MailDetail"></table>-->
 
     </context>
 </generatorConfiguration>

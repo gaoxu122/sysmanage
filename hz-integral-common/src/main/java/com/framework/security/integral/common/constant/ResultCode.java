@@ -1,13 +1,13 @@
 package com.framework.security.integral.common.constant;
 
 /**
-*PBReturnCode
+ * PBReturnCode
+ * <p>
+ * 返回错误码，对外接口一定要设置错误码 错误码按照顺序递增，不要重复
  *
-*返回错误码，对外接口一定要设置错误码 错误码按照顺序递增，不要重复
- *
-*@author jianghx
-*@create 2018/8/20 10:08
-**/
+ * @author jianghx
+ * @create 2018/8/20 10:08
+ **/
 public enum ResultCode {
 
     /**
@@ -24,18 +24,13 @@ public enum ResultCode {
 
     REQUEST_PARAM_EXIST(406, "请求所需参数不存在"),
 
-    TOKEN_FORBIDDEN_NULL_CODE(505,"token不存"),
-    TOKEN_FORBIDDEN_EXPIRE_CODE(506,"token过期"),
-    TOKEN_FORBIDDEN_SIGNATURE_CODE(507,"签名错误"),
-
+    TOKEN_FORBIDDEN_NULL_CODE(505, "token不存"),
+    TOKEN_FORBIDDEN_EXPIRE_CODE(506, "token过期"),
+    TOKEN_FORBIDDEN_SIGNATURE_CODE(507, "签名错误"),
+    SET_TOKEN_FILL(508,"token设置失败"),
 
 
     ;
-
-
-
-
-
 
 
     private Integer code;

@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 /**
  *service层返回对象列表封装
+ * @author gaoxu
  * @param <T>
  */
 public class ServiceResult<T>  implements Serializable{

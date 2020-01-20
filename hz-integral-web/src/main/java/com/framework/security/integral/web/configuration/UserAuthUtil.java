@@ -1,7 +1,7 @@
 package com.framework.security.integral.web.configuration;
 
 import com.framework.security.integral.web.exception.UserTokenException;
-import com.framework.security.integral.api.model.user.UserLoginVo;
+import com.framework.security.integral.api.model.user.UserLoginBo;
 import com.framework.security.integral.common.constant.ResultCode;
 import com.framework.security.integral.web.util.jwt.JwtHelper;
 import io.jsonwebtoken.ExpiredJwtException;
@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
 public class UserAuthUtil {
     @Autowired
     private KeyConfiguration keyConfiguration;
-    public UserLoginVo getInfoFromToken(String token) throws Exception {
+    public UserLoginBo getInfoFromToken(String token) throws Exception {
         try {
             return JwtHelper.getInfoFromToken(token, keyConfiguration.getUserPubKey());
         }catch (ExpiredJwtException ex){

@@ -12,5 +12,6 @@
     <result column="creator" property="creator" jdbcType="INTEGER" />
     <result column="is_delete" property="isDelete" jdbcType="BIT" />
     <result column="is_enable" property="isEnable" jdbcType="BIT" />
+    <result column="sort" property="sort" jdbcType="INTEGER" />
   </resultMap>
 </mapper>

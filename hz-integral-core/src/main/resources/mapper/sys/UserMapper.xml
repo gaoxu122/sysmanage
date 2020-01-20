@@ -1,35 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.framework.security.integral.core.dao.sys.UserMapper">
-  <resultMap id="BaseResultMap" type="com.framework.security.integral.core.model.sys.User">
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="user_name" jdbcType="VARCHAR" property="userName" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
-    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
-    <result column="sex" jdbcType="INTEGER" property="sex" />
-    <result column="email" jdbcType="VARCHAR" property="email" />
-    <result column="tel" jdbcType="INTEGER" property="tel" />
-    <result column="is_delect" jdbcType="BIT" property="isDelect" />
-    <result column="is_enable" jdbcType="BIT" property="isEnable" />
-  </resultMap>
+    <resultMap id="BaseResultMap" type="com.framework.security.integral.core.model.sys.User">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate"/>
+        <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified"/>
+        <result column="sex" jdbcType="INTEGER" property="sex"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="tel" jdbcType="BIGINT" property="tel"/>
+        <result column="is_delect" jdbcType="BIT" property="isDelect"/>
+        <result column="is_enable" jdbcType="BIT" property="isEnable"/>
+    </resultMap>
 
-    <select id="getUserNameByUser" resultMap="BaseResultMap">
-        SELECT user_name FROM `user` WHERE is_delect =1  AND  user_name=#{userName}
+    <select id="checkUser" resultMap="BaseResultMap">
+        SELECT user_name FROM `user` WHERE is_delect =0
+        <if test="userName !=null and userName !=''">
+            AND user_name=#{userName}
+        </if>
+        <if test="pwd !=null and pwd !=''">
+            AND password=#{pwd}
+        </if>
     </select>
 
     <update id="batchDeleteUser" parameterType="INTEGER">
 
         <foreach collection="list" index="index" item="id" separator=";">
             UPDATE USER
-            SET is_delect = 0
+            SET is_delect = 1
             WHERE
-        <if test="id !=null and id !=''">
-          id=#{id}
-        </if>
+            <if test="id !=null and id !=''">
+                id=#{id}
+            </if>
         </foreach>
     </update>
+
+    <select id="getUserRelateInfo" resultType="com.framework.security.integral.core.vo.UserTokenDetail">
+        SELECT
+         u.id as userId,
+	     u.user_name as userName,
+	     ru.role_id as roleId,
+	     du.dept_id as deptId,
+	     d.`name` as deptName
+       FROM
+	   USER  u
+       LEFT JOIN dept_user du ON  u.id =du.user_id
+       LEFT JOIN role_user ru ON  u.id=ru.user_id
+       LEFT JOIN department d ON  d.id=du.dept_id
+       where  u.id=#{userId}
+    </select>
 </mapper>

@@ -1,7 +1,7 @@
 package com.framework.security.integral.web.intercepter;
 
 import com.framework.security.integral.web.annotation.IgnoreUserToken;
-import com.framework.security.integral.api.model.user.UserLoginVo;
+import com.framework.security.integral.api.model.user.UserLoginBo;
 import com.framework.security.integral.common.context.BaseContextHandler;
 import com.framework.security.integral.web.configuration.UserAuthConfig;
 import com.framework.security.integral.web.configuration.UserAuthUtil;
@@ -15,13 +15,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
-*UserAuthRestInterceptor
+ * UserAuthRestInterceptor
+ * <p>
+ * 根据token初始化用户信息
  *
-*根据token初始化用户信息
- *
-*@author jianghx
-*@create 2018/8/21 14:41
-**/
+ * @author jianghx
+ * @create 2018/8/21 14:41
+ **/
 public class UserAuthRestInterceptor extends HandlerInterceptorAdapter {
     @Autowired
     private UserAuthConfig userAuthConfig;
@@ -38,27 +38,25 @@ public class UserAuthRestInterceptor extends HandlerInterceptorAdapter {
         if (annotation == null) {
             annotation = handlerMethod.getMethodAnnotation(IgnoreUserToken.class);
         }
-        if (annotation != null||request.getRequestURI().startsWith("/api")) {
-                return super.preHandle(request, response, handler);
+        if (annotation != null || request.getRequestURI().startsWith("/api/*")) {
+            return super.preHandle(request, response, handler);
         }
 
         String token = request.getHeader(userAuthConfig.getTokenHeader());
-        UserLoginVo infoFromToken = userAuthUtil.getInfoFromToken(token);
+        UserLoginBo infoFromToken = userAuthUtil.getInfoFromToken(token);
 
-        String name = infoFromToken.getName();
+        String name = infoFromToken.getUserName();
         BaseContextHandler.setUserId(infoFromToken.getUserId());
-        BaseContextHandler.setName(name);
-        BaseContextHandler.setCorpId(infoFromToken.getCorpId());
-        BaseContextHandler.setAgentId(infoFromToken.getAgentId());
-        BaseContextHandler.setDingId(infoFromToken.getDingId());
+        BaseContextHandler.setUserName(name);
+        BaseContextHandler.setDeptId(infoFromToken.getDeptId());
+        BaseContextHandler.setDeptName(infoFromToken.getDeptName());
+        BaseContextHandler.setRoleId(infoFromToken.getRoleId());
         return super.preHandle(request, response, handler);
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
         BaseContextHandler.remove();
-
-        System.out.println("");
         super.afterCompletion(request, response, handler, ex);
     }
 }
