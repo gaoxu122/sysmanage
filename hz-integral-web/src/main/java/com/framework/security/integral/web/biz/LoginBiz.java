@@ -6,11 +6,11 @@ import com.framework.security.integral.core.model.sys.User;
 import com.framework.security.integral.core.service.sys.UserService;
 import com.framework.security.integral.web.constant.ReturnCode;
 import com.framework.security.integral.web.my.UserEntity;
-import com.framework.security.integral.web.util.MiteBeanUtils;
 import com.framework.security.integral.web.vo.UserLoginVO;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,6 +18,9 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * @author gaoxu
  * @date 2019-07-03 16:28
+ *  添加功能
+ *  1.登陆时间
+ *  2.访问量
  */
 
 @Service
@@ -33,6 +36,7 @@ public class LoginBiz {
 
     @Autowired
     private JwtService jwtService;
+
 
 
     /**
@@ -55,14 +59,15 @@ public class LoginBiz {
 
         // 用户登录的时候也生成token
         String token = jwtService.generateToken(user);
-        log.info("token:{}", token);
 
         return ObjectRestResponse.success(token);
     }
 
     /**
-     * 注册
+     * 注册    消息队列
+     * 用户注册完成后，给用户发送邮件
      *
+     * <>后期添加短信通知</>
      * @param user
      * @return
      */

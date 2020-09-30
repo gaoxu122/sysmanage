@@ -23,7 +23,7 @@ public class Constants {
     /**
      * 系统失败
      */
-    public static final String SYS_FAILE = "fail";
+    public static final String SYS_FAiLE = "fail";
 
     /**
      * 提前10分钟校验钉钉企业token

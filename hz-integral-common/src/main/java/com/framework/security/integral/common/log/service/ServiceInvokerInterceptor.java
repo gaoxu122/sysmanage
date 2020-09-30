@@ -2,8 +2,6 @@ package com.framework.security.integral.common.log.service;
 
 import com.framework.security.integral.common.log.context.RpcContext;
 import com.framework.security.integral.common.log.http.HttpRequestContextHolder;
-import com.framework.security.integral.common.log.context.RpcContext;
-import com.framework.security.integral.common.log.http.HttpRequestContextHolder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
@@ -18,8 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 public class ServiceInvokerInterceptor extends HandlerInterceptorAdapter {
 
-  /*  private final static Logger mainLogger     = Logger.getLogger(ServiceInvokerInterceptor.class);
-    private final static Logger accessLogger   = Logger.getLogger("CONTROLLER_PROFILE_LOG");*/
 
     @Autowired
     private HttpRequestContextHolder httpRequestContextHolder;

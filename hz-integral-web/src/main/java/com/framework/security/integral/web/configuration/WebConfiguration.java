@@ -46,6 +46,7 @@ public class WebConfiguration implements WebMvcConfigurer {
     HttpRequestInteceptor getHttpRequestInteceptor() {
         return new HttpRequestInteceptor();
     }
+
     /**
      * 需要用户和服务认证判断的路径
      * @return

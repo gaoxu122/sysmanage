@@ -7,14 +7,18 @@ import com.framework.security.integral.core.dao.sys.MenuMapper;
 import com.framework.security.integral.core.model.sys.Menu;
 import com.framework.security.integral.web.constant.ReturnCode;
 import com.framework.security.integral.web.exception.MenuException;
+import com.framework.security.integral.web.util.StringUtil;
 import com.framework.security.integral.web.vo.MenuVO;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import springfox.documentation.annotations.Cacheable;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -38,10 +42,21 @@ public class MenuBiz extends BaseBiz<MenuMapper, Menu> {
         if (StringUtils.isBlank(menu.getTitle()) || StringUtils.isBlank(menu.getPath())) {
             return ObjectRestResponse.failure(ReturnCode.PARAMETER_INCOMING_ERROR.getCode(), ReturnCode.PARAMETER_INCOMING_ERROR.getMsg());
         }
-
+        Integer parentId = StringUtil.getLastStr(menu.getPath());
+        menu.setGmtCreate(new Date());
+        menu.setGmtModfied(new Date());
+        menu.setIsDelete(false);
+        menu.setIsEnable(true);
+        menu.setParentId(parentId);
         try {
             // 插入数据
             mapper.insert(menu);
+            Menu parentMenu = this.selectById(parentId);
+            String path = parentMenu.getPath() + "," + menu.getId();
+            menu.setPath(path);
+            //更新数据 ，给path添加自己的id
+            mapper.updateByPrimaryKeySelective(menu);
+
         } catch (Exception e) {
             throw new MenuException(ReturnCode.INSERT_FAILED.getMsg(), ReturnCode.INSERT_FAILED.getCode());
         }
@@ -56,11 +71,11 @@ public class MenuBiz extends BaseBiz<MenuMapper, Menu> {
      */
     public ObjectRestResponse updateMenu(Menu menu) {
 
-        if (StringUtils.isBlank(menu.getTitle()) || StringUtils.isBlank(menu.getPath())) {
+        if (StringUtils.isBlank(menu.getTitle())) {
             return ObjectRestResponse.failure(ReturnCode.PARAMETER_INCOMING_ERROR.getCode(), ReturnCode.PARAMETER_INCOMING_ERROR.getMsg());
         }
         try {
-            this.updateSelectiveById(menu);
+            mapper.updateByPrimaryKey(menu);
         } catch (Exception e) {
             throw new MenuException(ReturnCode.UPDATE_FAILED.getMsg(), ReturnCode.UPDATE_FAILED.getCode());
         }
@@ -74,21 +89,21 @@ public class MenuBiz extends BaseBiz<MenuMapper, Menu> {
      * @param id
      * @return
      */
-    public ObjectRestResponse deleteMenu(Integer id) {
+    public ObjectRestResponse deleteMenu(int id) {
 
-        if (null == id) {
+        if (id <= 0) {
             return ObjectRestResponse.failure(ReturnCode.PARAMETER_INCOMING_ERROR.getCode(), ReturnCode.PARAMETER_INCOMING_ERROR.getMsg());
         }
         try {
             // 先删除本id对应的数据 ,执行逻辑删除
             mapper.deleteByPrimaryKey(id);
             // 然后删除该id下的所有节点 这个删除可以根据path来操作
-            Example example = new Example(Menu.class);
-            Example.Criteria criteria = example.createCriteria();
-            Menu menu = mapper.selectByPrimaryKey(id);
-            String parentId = "," + menu.getParentId();
-            criteria.andLike("path", parentId);
-            mapper.deleteByExample(example);
+//            Example example = new Example(Menu.class);
+//            Example.Criteria criteria = example.createCriteria();
+//            Menu menu = mapper.selectByPrimaryKey(id);
+//            String parentId = "," + menu.getParentId();
+//            criteria.andLike("path", parentId);
+//            mapper.deleteByExample(example);
         } catch (Exception e) {
             throw new MenuException(ReturnCode.DELETE_FAILED.getMsg(), ReturnCode.DELETE_FAILED.getCode());
         }
@@ -103,7 +118,32 @@ public class MenuBiz extends BaseBiz<MenuMapper, Menu> {
     public ObjectRestResponse selectMenu() {
 
         // 原始数据
-        List<Menu> menus = this.selectListAll();
+        List<Menu> menus = mapper.selectAll();
+        return ObjectRestResponse.success(buildTree(menus));
+    }
+
+    /**
+     * 启用和禁用菜单
+     *
+     * @param id
+     * @return
+     */
+    public ObjectRestResponse enable(Integer id) {
+
+        if (id == null) {
+            return ObjectRestResponse.failure(ReturnCode.MENU_ID_IS_NULL.getCode(), ReturnCode.MENU_ID_IS_NULL.getMsg());
+        }
+        Example example = new Example(Menu.class);
+        Example.Criteria criteria = example.createCriteria();
+        Menu menu = this.mapper.selectByPrimaryKey(id);
+        criteria.andEqualTo("isEnable", !menu.getIsEnable());
+        this.mapper.updateByExampleSelective(menu, example);
+        return ObjectRestResponse.success();
+    }
+
+
+    public List<MenuVO> buildTree(List<Menu> menus) {
+
         // 转换数据
         List<MenuVO> menuVos = new ArrayList<>();
         // 返回数据
@@ -117,11 +157,11 @@ public class MenuBiz extends BaseBiz<MenuMapper, Menu> {
                 menuVo.setId(menu.getId());
                 menuVo.setParentId(menu.getParentId());
                 menuVo.setPath(menu.getPath());
-                menuVo.setMenuName(menu.getTitle());
+                menuVo.setTitle(menu.getTitle());
                 menuVo.setAddress(menu.getAddress());
-                menuVo.setName(menu.getName());
+                menuVo.setIndex(menu.getName());
                 menuVo.setLabel(String.valueOf(menu.getTitle()));
-                menuVo.setValue(String.valueOf(menu.getParentId()));
+                menuVo.setValue(String.valueOf(menu.getId()));
                 menuVo.setGmtCreate(menu.getGmtCreate());
                 menuVo.setGmtModfied(menu.getGmtModfied());
                 menuVo.setIsDelete(menu.getIsDelete());
@@ -138,7 +178,8 @@ public class MenuBiz extends BaseBiz<MenuMapper, Menu> {
             }
 
         }
-        return ObjectRestResponse.success(returnMenuVos);
+        return returnMenuVos;
     }
+
 
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.framework.security.integral.core.dao.mail.MailDetailMapper">
+    <resultMap id="BaseResultMap" type="com.framework.security.integral.core.model.mail.MailDetail">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="mail_id" property="mailId" jdbcType="INTEGER"/>
+        <result column="respose_personId" property="resposePersonid" jdbcType="INTEGER"/>
+        <result column="send_date" property="sendDate" jdbcType="TIMESTAMP"/>
+        <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP"/>
+        <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <insert id="batchInsertMailDetail" parameterType="java.util.List">
+        INSERT INTO
+        mail_detail (mail_id,respose_personId,send_date,gmt_create,gmt_modified)
+        VALUES
+        <foreach collection="list" item="mailDetail" separator=",">
+            (#{mailDetail.mailId},
+            #{mailDetail.resposePersonid},
+            #{mailDetail.sendDate},
+            now(),
+            now()
+            )
+        </foreach>
+    </insert>
+</mapper>

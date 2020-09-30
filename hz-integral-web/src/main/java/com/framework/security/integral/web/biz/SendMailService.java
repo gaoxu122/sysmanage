@@ -1,10 +1,8 @@
 package com.framework.security.integral.web.biz;
 
-import com.framework.security.integral.common.msg.ObjectRestResponse;
 import com.framework.security.integral.web.configuration.EmailConfiguration;
 import com.framework.security.integral.web.util.EmailUtil;
 import com.framework.security.integral.web.util.SendMailException;
-import com.framework.security.integral.web.vo.EmailVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

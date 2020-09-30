@@ -1,0 +1,22 @@
+logging:
+  level:
+    com.framework.security.integral.core.dao: debug
+spring:
+  profiles: dev
+  application:
+    name: redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    lettuce:
+      shutdown-timeout: 0
+server:
+  port: 8888

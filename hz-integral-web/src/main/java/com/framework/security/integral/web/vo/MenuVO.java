@@ -17,7 +17,7 @@ public class MenuVO extends TreeNode {
     /**
      * 菜单名
      */
-    private String menuName;
+    private String title;
     /**
      * 深度
      */
@@ -48,7 +48,7 @@ public class MenuVO extends TreeNode {
     /**
      * 索引
      */
-    private String name;
+    private String index;
 
     /**
      * 图标

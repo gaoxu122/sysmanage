@@ -9,9 +9,9 @@ import java.io.Serializable;
  * @create 2019/4/2 10:41
  **/
 @Data
-public class UserLoginBo {
+public class UserLoginBo implements Serializable {
 
-    private static final long serialVersionUID=-1L;
+    private static final long serialVersionUID = -1L;
 
     /**
      * 系统用户id用户

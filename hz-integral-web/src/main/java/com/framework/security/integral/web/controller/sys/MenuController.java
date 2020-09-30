@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(value = "menu")
 public class MenuController extends BaseController<MenuBiz, MenuMapper> {
+
+
     /**
      * 新增菜单
      *
@@ -24,20 +26,20 @@ public class MenuController extends BaseController<MenuBiz, MenuMapper> {
      * @return
      */
     @PostMapping(value = "add_menu")
-    public ObjectRestResponse insertMenu(Menu menu) {
+    public ObjectRestResponse insertMenu(@RequestBody Menu menu) {
 
         return baseBiz.insertMenu(menu);
     }
 
     @PutMapping(value = "update_menu")
-    public ObjectRestResponse updateMenu(Menu menu) {
+    public ObjectRestResponse updateMenu(@RequestBody Menu menu) {
 
         return baseBiz.updateMenu(menu);
     }
 
 
     @DeleteMapping(value = "delete_menu")
-    public ObjectRestResponse deleteMenu(Integer id) {
+    public ObjectRestResponse deleteMenu(int id) {
 
         return baseBiz.deleteMenu(id);
     }
@@ -46,6 +48,12 @@ public class MenuController extends BaseController<MenuBiz, MenuMapper> {
     public ObjectRestResponse selectMenuTree() {
 
         return baseBiz.selectMenu();
+    }
+
+
+    @PostMapping(value = "menu_enable")
+    public ObjectRestResponse enable(Integer id) {
+        return baseBiz.enable(id);
     }
 
 

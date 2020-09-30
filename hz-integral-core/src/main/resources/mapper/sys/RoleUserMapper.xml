@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.framework.security.integral.core.dao.sys.RoleUserMapper">
+    <resultMap id="BaseResultMap" type="com.framework.security.integral.core.model.sys.RoleUser">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="role_id" property="roleId" jdbcType="INTEGER"/>
+        <result column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="is_delete" property="isDelete" jdbcType="BIT"/>
+        <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP"/>
+        <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <resultMap id="RoleUserVOMap" type="com.framework.security.integral.core.vo.RoleUserVO">
+
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="role_id" property="roleId" jdbcType="INTEGER"/>
+        <result column="name" property="roleName" jdbcType="VARCHAR"/>
+        <result column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="user_name" property="userName" jdbcType="VARCHAR"/>
+        <result column="is_delete" property="isDelete" jdbcType="BIT"/>
+        <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP"/>
+        <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <resultMap id="UserRoleVOMap" type="com.framework.security.integral.core.vo.UserRoleVO">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="user_name" property="userName" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="selectRoleByUserName" resultMap="RoleUserVOMap">
+        SELECT
+            ru.id,
+            ru.role_id,
+            r.`name`  ,
+            ru.user_id,
+            u.user_name,
+            ru.is_delete,
+            ru.gmt_create,
+            ru.gmt_modified
+        FROM
+            role_user ru
+        INNER JOIN `user` u ON ru.role_id = u.id
+        LEFT JOIN role r ON ru.role_id = r.id
+        AND user_name = #{userName}
+        AND ru.is_delete = 0
+    </select>
+    <select id="selectNoPermissionUsersByRoleId" resultMap="UserRoleVOMap">
+        SELECT
+            u.id ,
+            u.user_name
+        FROM
+            `user` u
+        LEFT JOIN role_user ru ON ru.user_id = u.id
+        where u.is_delect = 0
+        AND u.is_enable = 1
+        <if test="userName!= null and userName!= ''">
+            AND  user_name  LIKE  concat(concat('%',#{username}),'%')
+        </if>
+
+    </select>
+
+    <select id="selectPermissionUsersByRoleId" resultType="java.lang.String">
+        SELECT
+        `user`.id
+        FROM  `user`
+        INNER JOIN role_user ru ON ru.user_id = `user`.id
+        where role_id = #{roleId}
+        AND `user`.is_delect =0
+        AND  `user`.is_enable=1
+        <if test="userName!= null and userName!= ''">
+            AND  user_name  LIKE  concat(concat('%',#{username}),'%')
+        </if>
+    </select>
+</mapper>

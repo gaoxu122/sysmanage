@@ -53,4 +53,21 @@
        LEFT JOIN department d ON  d.id=du.dept_id
        where  u.id=#{userId}
     </select>
+    <select id="selectRoleByUserName" resultType="com.framework.security.integral.core.vo.RoleUserVO">
+        SELECT
+            ru.id,
+            ru.role_id,
+            r.`name`  ,
+            ru.user_id,
+            u.user_name,
+            ru.is_delete,
+            ru.gmt_create,
+            ru.gmt_modified
+        FROM
+            role_user ru
+        INNER JOIN `user` u ON ru.role_id = u.id
+        LEFT JOIN role r ON ru.role_id = r.id
+        AND user_name = #{userName}
+        AND ru.is_delete = 0
+    </select>
 </mapper>

@@ -18,6 +18,9 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @author gaoxu
+ */
 public class MyBeanCopy {
 
 	private final class DateToStringConverter implements Converter<Date, String> {

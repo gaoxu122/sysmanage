@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/hz-integral-core/hz-integral-core.iml" filepath="$PROJECT_DIR$/hz-integral-core/hz-integral-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/hz-integral-web/hz-integral-web.iml" filepath="$PROJECT_DIR$/hz-integral-web/hz-integral-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/hz-permissions/hz-permissions.iml" filepath="$PROJECT_DIR$/hz-permissions/hz-permissions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
     </modules>
   </component>
 </project>

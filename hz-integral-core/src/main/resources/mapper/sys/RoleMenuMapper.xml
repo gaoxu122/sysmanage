@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.framework.security.integral.core.dao.sys.RoleMenuMapper">
+    <resultMap id="BaseResultMap" type="com.framework.security.integral.core.model.sys.RoleMenu">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="role_id" property="roleId" jdbcType="INTEGER"/>
+        <result column="menu_id" property="menuId" jdbcType="INTEGER"/>
+        <result column="is_delete" property="isDelete" jdbcType="INTEGER"/>
+        <result column="gmt_create" property="gmtCreate" jdbcType="DATE"/>
+        <result column="gmt_modified" property="gmtModified" jdbcType="DATE"/>
+    </resultMap>
+    <resultMap id="RoleMenuVOMap" type="com.framework.security.integral.core.vo.RoleMenuVO">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="role_id" property="roleId" jdbcType="INTEGER"/>
+        <result column="menu_id" property="menuId" jdbcType="INTEGER"/>
+        <result column="name" property="menuName" jdbcType="VARCHAR"/>
+        <result column="is_delete" property="isDelete" jdbcType="INTEGER"/>
+        <result column="gmt_create" property="gmtCreate" jdbcType="DATE"/>
+        <result column="gmt_modified" property="gmtModified" jdbcType="DATE"/>
+    </resultMap>
+
+    <select id="getMenusByRole" resultMap="RoleMenuVOMap">
+        SELECT
+          rm.id,
+          rm.role_id,
+          rm.menu_id,
+          m.`name`,
+          rm.is_delete,
+          rm.gmt_create,
+          rm.gmt_modified
+        FROM
+            role_menu rm
+        inner JOIN menu m ON rm.menu_id = m.id
+        AND role_id = #{roleId}
+        AND rm.is_delete = 0
+    </select>
+
+    <insert id="batchInsertRoleMenu" parameterType="java.util.List">
+        insert into role_menu (role_id ,menu_id,is_delete,gmt_create,gmt_modified)
+        values
+        <foreach collection="roleMenus" item="item" index="index" separator=",">
+            (#{item.roleId},
+            #{item.menuId},
+            0,
+            now(),
+            now())
+        </foreach>
+    </insert>
+</mapper>

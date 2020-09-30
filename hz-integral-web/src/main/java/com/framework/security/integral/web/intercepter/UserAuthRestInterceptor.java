@@ -1,5 +1,7 @@
 package com.framework.security.integral.web.intercepter;
 
+import com.framework.security.integral.common.constant.ResultCode;
+import com.framework.security.integral.common.exception.BaseException;
 import com.framework.security.integral.web.annotation.IgnoreUserToken;
 import com.framework.security.integral.api.model.user.UserLoginBo;
 import com.framework.security.integral.common.context.BaseContextHandler;
@@ -19,8 +21,8 @@ import javax.servlet.http.HttpServletResponse;
  * <p>
  * 根据token初始化用户信息
  *
- * @author jianghx
- * @create 2018/8/21 14:41
+ * @author gaoxu
+ * @create 2019/9/21 14:41
  **/
 public class UserAuthRestInterceptor extends HandlerInterceptorAdapter {
     @Autowired
@@ -43,7 +45,13 @@ public class UserAuthRestInterceptor extends HandlerInterceptorAdapter {
         }
 
         String token = request.getHeader(userAuthConfig.getTokenHeader());
-        UserLoginBo infoFromToken = userAuthUtil.getInfoFromToken(token);
+        UserLoginBo infoFromToken;
+        try {
+            infoFromToken = userAuthUtil.getInfoFromToken(token);
+        } catch (Exception e) {
+            throw new BaseException(ResultCode.TOKEN_FORBIDDEN_EXPIRE_CODE.getMsg(), ResultCode.TOKEN_FORBIDDEN_EXPIRE_CODE.getCode());
+        }
+
 
         String name = infoFromToken.getUserName();
         BaseContextHandler.setUserId(infoFromToken.getUserId());

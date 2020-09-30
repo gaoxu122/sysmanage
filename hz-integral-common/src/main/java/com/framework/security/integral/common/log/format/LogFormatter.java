@@ -2,7 +2,6 @@ package com.framework.security.integral.common.log.format;
 
 
 import com.framework.security.integral.common.log.context.RpcContext;
-import com.framework.security.integral.common.log.context.RpcContext;
 
 public class LogFormatter {
 

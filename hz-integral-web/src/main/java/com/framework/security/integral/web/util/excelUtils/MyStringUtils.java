@@ -1,5 +1,8 @@
 package com.framework.security.integral.web.util.excelUtils;
 
+/**
+ * @author gaoxu
+ */
 public class MyStringUtils {
 
     private MyStringUtils() {}

@@ -6,8 +6,10 @@ package com.framework.security.integral.web.constant;
  */
 public enum ReturnCode {
 
-    /** 生成树形失败**/
-    CREATE_TREE_FAIL(800,"生成树形失败"),
+    /**
+     * 生成树形失败
+     **/
+    CREATE_TREE_FAIL(800, "生成树形失败"),
 
     /***系统设置返回码及其msg ：1000  -  1200***/
     /***       用户            ***/
@@ -22,17 +24,21 @@ public enum ReturnCode {
 
     /***       部门            ***/
     DEPARTMENT_NAME_NOT_EMPTY(1020, "部门名称不能为空"),
-    SUPERIOR_DEPARTMENT_NOT_SELECTED(1021,"未选择上级部门"),
+    SUPERIOR_DEPARTMENT_NOT_SELECTED(1021, "未选择上级部门"),
 
     /***       权限            ***/
 
 
+    /***       菜单           ***/
+    MENU_ID_IS_NULL(1040, "菜单id不能为空"),
 
-    /**       邮件功能         **/
-    MAIL_ITEM_IS_EMPTY(1070,"邮件主题不能为空"),
-    MAIL_RESPONSE_IS_EMPTY(1071,"邮件接收人不能为空"),
-    MAIL_CONTENT_IS_EMPTY(1072,"邮件内容不能为空"),
-
+    /**
+     * 邮件功能
+     **/
+    MAIL_ITEM_IS_EMPTY(1070, "邮件主题不能为空"),
+    MAIL_RESPONSE_IS_EMPTY(1071, "邮件接收人不能为空"),
+    MAIL_CONTENT_IS_EMPTY(1072, "邮件内容不能为空"),
+    SEND_MAIL_FAIL(1073, "邮件发送失败！"),
 
 
     PARAMETER_INCOMING_ERROR(10001, "传入参数错误"),
@@ -41,7 +47,8 @@ public enum ReturnCode {
     UPDATE_FAILED(11000, "更新失败"),
     INSERT_FAILED(11001, "插入失败"),
     SELECT_FAILED(11002, "查询失败"),
-    DELETE_FAILED(11003, "删除失败"),;
+    DELETE_FAILED(11003, "删除失败"),
+    ;
 
 
     /**

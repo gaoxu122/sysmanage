@@ -1,5 +1,7 @@
 package com.framework.security.integral.common.exception;
 
+import java.util.function.Supplier;
+
 /**
  * BaseException
  *

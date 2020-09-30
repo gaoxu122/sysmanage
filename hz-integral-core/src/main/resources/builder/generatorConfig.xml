@@ -33,10 +33,13 @@
         <!--<table tableName="login_log" domainObjectName="LoginLog"></table>-->
         <!--<table tableName="exception_log" domainObjectName="ExceptionLog"></table>-->
         <!--<table tableName="request_log" domainObjectName="RequestLog"></table>-->
-        <table tableName="menu" domainObjectName="Menu"></table>
+<!--        <table tableName="menu" domainObjectName="Menu"></table>-->
         <!--<table tableName="Department" domainObjectName="Department"></table>-->
 <!--        <table tableName="mail" domainObjectName="Mail"></table>-->
 <!--        <table tableName="mail_detail" domainObjectName="MailDetail"></table>-->
+<!--        <table tableName="video_type" domainObjectName="VideoType"></table>-->
+        <table tableName="role_user" domainObjectName="RoleUser"></table>
+        <table tableName="role_menu" domainObjectName="RoleMenu"></table>
 
     </context>
 </generatorConfiguration>

@@ -78,9 +78,6 @@ public class BaseContextHandler {
         set(CommonConstants.CONTEXT_KEY_TOKEN, token);
     }
 
-//    public static void setName(String name) {
-//        set(CommonConstants.CONTEXT_KEY_USER_NAME, name);
-//    }
 
     public static void setUserId(Integer userId) {
         set(CommonConstants.CONTEXT_KEY_USER_ID, userId);

@@ -1,6 +1,8 @@
 package com.framework.security.integral.web.util.jwt;
 
 import com.framework.security.integral.common.constant.CommonConstants;
+import com.framework.security.integral.common.constant.ResultCode;
+import com.framework.security.integral.common.exception.BaseException;
 import com.framework.security.integral.common.util.StringHelper;
 import com.framework.security.integral.api.model.user.UserLoginBo;
 import io.jsonwebtoken.*;
@@ -114,8 +116,11 @@ public class JwtHelper {
      * @throws Exception
      */
     public static UserLoginBo getInfoFromToken(String token, byte[] pubKeyPath) throws Exception {
-        log.info(token);
+
         Jws<Claims> claimsJws = parserToken(token, pubKeyPath);
+        if (claimsJws == null) {
+            throw new BaseException(ResultCode.TOKEN_FORBIDDEN_EXPIRE_CODE.getMsg(), ResultCode.TOKEN_FORBIDDEN_EXPIRE_CODE.getCode());
+        }
         Claims body = claimsJws.getBody();
 
 

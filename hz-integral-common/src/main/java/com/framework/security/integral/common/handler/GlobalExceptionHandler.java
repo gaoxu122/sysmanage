@@ -43,18 +43,18 @@ public class GlobalExceptionHandler {
 
         logger.error(ex.getMessage(),ex);
 
-        //405
+        // 405
         if (ex instanceof HttpRequestMethodNotSupportedException) {
             return new BaseResponse(ResultCode.REQUEST_METHOD_ERROR.getCode(), ResultCode.REQUEST_METHOD_ERROR.getMsg());
 
         }
 
-        //400
+        // 400
         if (ex instanceof MissingServletRequestParameterException) {
             return new BaseResponse(ResultCode.ERROR_REQUEST.getCode(), ResultCode.ERROR_REQUEST.getMsg());
 
         }
-        //404
+        // 404
         if (ex instanceof NoHandlerFoundException) {
             return new BaseResponse(ResultCode.REQUEST_NOT_EXIST.getCode(), ResultCode.REQUEST_NOT_EXIST.getMsg());
         }
